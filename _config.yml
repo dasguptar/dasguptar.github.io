@@ -12,12 +12,12 @@ locale                   : "en"
 title                    : "Riddhiman Dasgupta"
 title_separator          : "-"
 name                     : "Riddhiman Dasgupta"
-description              : "My Personal Website"
-url                      : dasguptar.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "It's a magical world, Hobbes, ol' buddy...let's go exploring!"
+url                      : https://dasguptar.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : dasguptar/dasguptar.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : dasguptar/dasguptar.github.io
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
@@ -30,22 +30,6 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : # ['name', 'email', 'url', 'message']
-  branch                 : # "master"
-  commitMessage          : # "New comment."
-  filename               : # comment-{@timestamp}
-  format                 : # "yml"
-  moderation             : # true
-  path                   : # "/_data/comments/{options.slug}" (default)
-  requiredFields         : # ['name', 'email', 'message']
-  transforms:
-    email                : # "md5"
-  generatedFields:
-    date:
-      type               : # "date"
-      options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 reCaptcha:
   siteKey                :
   secret                 :
@@ -53,17 +37,17 @@ atom_feed:
   path                   : # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
+google_site_verification : "n-R7IyCVWlGkHEywXlBOim_H4URo6csJpty7DSX_Z_4"
+bing_site_verification   : "F089D0D1865F68B1A5ADDC7507F98931"
 alexa_site_verification  :
 yandex_site_verification :
 naver-site-verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : "dasguptar"
 facebook:
-  username               :
+  username               : "riddhiman.dasgupta"
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
@@ -80,39 +64,19 @@ analytics:
   google:
     tracking_id          :
 
-
 # Site Author
 author:
   name             : "Riddhiman Dasgupta"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
-  facebook         :
-  foursquare       :
-  github           :
-  gitlab           :
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
-  pinterest        :
-  soundcloud       :
+  bio              : "Deep Learning. Science Fiction. Comic Books."
+  location         : "Bangalore, India"
+  email            : "riddhiman.dasgupta@gmail.com"
+  uri              : "https://dasguptar.github.io/"
+  facebook         : "riddhiman.dasgupta"
+  github           : "dasguptar"
+  linkedin         : "dasguptar"
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
-  tumblr           :
-  twitter          :
-  vine             :
-  weibo            :
-  xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
-
+  twitter          : "riddhimandg"
 
 # Reading Files
 include:
@@ -150,14 +114,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
-incremental: false
-
+incremental: true
 
 # Markdown Processing
 kramdown:
@@ -170,21 +132,16 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-# Remote theme
-remote_theme: "mmistakes/minimal-mistakes"
+timezone: Asia/Kolkata
 
 # Plugins (previously gems:)
 plugins:
@@ -197,12 +154,15 @@ plugins:
 
 # mimic GitHub Pages with --safe
 whitelist:
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
 
+# Remote theme
+remote_theme: "mmistakes/minimal-mistakes"
 
 # Archives
 #  Type
@@ -232,14 +192,12 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
-
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
     envs: development
-
 
 # Defaults
 defaults:
