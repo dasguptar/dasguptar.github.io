@@ -7,9 +7,9 @@ main:
  #- title: Code / Data
  #  url: /open-source/
  - title: Resume
-   url: /resume/
+   url: /resume
  - title: Blog
-   url: /blog/
+   url: /blog
  #- title: "Sample Posts"
  #  url: /year-archive/
  #- title: "Sample Collections"
