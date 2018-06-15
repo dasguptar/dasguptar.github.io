@@ -18,8 +18,23 @@
 
   a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: underline;
+    cursor: pointer;
+    &:focus {
+      @extend %tab-focus;
+    }
+
+    &:hover,
+    &:active {
+      color: $link-color-hover;
+      outline: 0;
+    }
+
+    &:visited {
+      color: $link-color-visited;
+    }
   }
+
 }
 
 .archive__subtitle {
