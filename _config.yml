@@ -14,7 +14,7 @@ title_separator          : "-"
 name                     : "Riddhiman Dasgupta"
 description              : "It's a magical world, Hobbes, ol' buddy...let's go exploring!"
 url                      : https://dasguptar.github.io
-baseurl                  : # the subpath of your site, e.g. "/blog"
+baseurl                  : ""
 repository               : dasguptar/dasguptar.github.io
 breadcrumbs              : true
 words_per_minute         : 200
@@ -39,7 +39,7 @@ author:
   location         : "Bangalore, India"
   email            : "riddhiman.dasgupta@gmail.com"
   uri              : "https://dasguptar.github.io/"
-  facebook         : "riddhiman.dasgupta"
+  facebook         : # "riddhiman.dasgupta"
   github           : "dasguptar"
   linkedin         : "dasguptar"
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
@@ -143,19 +143,20 @@ tag_archive:
 # - http://jch.penibelst.de/
 compress_html:
   clippings: all
-  ignore:
-    envs: development
+  comments: all
+  endings: all
+  startings: all
+  blanklines: true
+  profile: true
+  # ignore:
+  #   envs: development
 
 # Defaults
 defaults:
   # _posts
   - scope:
       path: ""
-      type: posts
+      type: pages
     values:
-      layout: single
+      layout: home
       author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
